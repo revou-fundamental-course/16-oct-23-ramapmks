@@ -1,9 +1,64 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 0.5cm 2cm;
-    border-bottom: 1px solid green ;
+    align-items: center;
+    padding: 0cm 1.5cm;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
+
+.nav-item:hover {
+    background: lightblue;
+}
+
 .nav-logo img {
-    max-height: 88px;
+    margin-left: 15mm;
+    max-height: 69px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-item {
+    padding: 4px 18px;
+    border: 2.5px solid black;
+    min-width: 69px;
+    text-align: center;
+}
+.greeting {
+    padding-top: 2cm;
+    padding-left: 5cm;
+    color: white;
+}
+
+.banner {
+    border-bottom: 1px solid black;
+    background-image: url('../assets/09985785-7D38-4832-A103-0AF41181EA4E_1_105_c.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.headquarters {
+    padding: 3cm;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.hq-items {
+    padding: 2cm 3cm;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-text {
+    font-size: small
 }
