@@ -1,19 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keyboardku</title>
-    <link rel="stylesheet" href="./css/syle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rams Project</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <header class="header">
-         <div class="nav-logo"> 
-            <img src="./assets/09985785-7D38-4832-A103-0AF41181EA4E_1_105_c.jpeg" alt="logo website">
-         
+<body class="body">
+  
+<!--NAVBAR-->
+  <header class="header">
+      <div class="nav-logo"> 
+         <img src="./assets/LOGO WHITE.png" alt="logo website">
+       </div>
+
+    <nav class="nav">
+       <a href="#home"  class="nav-item"> Home </a>
+       <a href="#about-me" class="nav-item"> Our Profile </a>
+       <a href="#portofolio"  class="nav-item"> Protofolio </a>
+       <a href="#massage-us" class="nav-item"> Message Us </a>
+    </nav>
+</header>
+
+<!--GREETING-->
+<section id="home" class="banner">
+  <div class="greeting">
+      <h1>Halo <span id="username"></span>, Welcome To My Website</h1>
+      <p>Ini adalah website semua tentang Rams Project.</p>
+  </div>
+</section>
+
+<!--VISI MISI-->
+<section class="visi-misi">
+  <div class="visi-misi-text">
+    <center><h1>VISI</h1></center>
+    <p>
+      <li>Menjadi orang profesional yang efektif, efisien, dan terpercaya.</li>
+      <li>Terdepan dan terpercaya dalam mengerakkan ekonomi digital di Indonesia</li>
+    </p>
+  </div>
+  <div class="visi-misi-text">
+    <center><h1>MISI</h1></center>
+    <p>
+      <li>Memberikan kualitas layanan yang terbaik kepada client</li>
+      <LI>Mendorong dan mendukung kemajuan teknologi digital di Indonesia</LI>
+    </p>
+  </div>
+</section>
+
+<!--ABOUT ME-->
+<section class="my-profile">
+  <div id="about-me" class="my-profile-judul">
+    <h1>Profil Dibalik Rams Project</h1>
+  </div>
+  <div class="my-profile-isi">
+    <div class="my-profile-foto">
+      <img src="./assets/FOTO PROFILE.jpg" alt="FOTO RAMA GANTENG">
+      <br>
+      <span>Rama Pamungkas - Pekerja Pabrik & Freelancer</span>
+      <div class="my-profile-text">
+          <p>Perkanalkan nama saya Rama Pamungkas, Umur 22 tahun, Saya lulusan Juruan Multimedia dari SMKN 11 Semarang</p>
+          <p>Karena saya lulusan multimedia tentu saja saya menguasi beberapa keahlian di bidang fotografi & videografi, dan ilmu software & hardware komputer</p>
+          <p>Sekian profile saya, Terima Kasih</p>
+      </div>
+  </div>
+</div>
+</section>
+
+<!--PORTOFOLIO-->
+<section id="portofolio" class="portofolio">
+  <div class="portofolio-judul" style="position: relative; left: 150px; top:  15px;">
+    <h2>Galery Portofolio</h2>
+    <h4>Beberapa hasil kerja sama company dengan beberapa client</h4>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://www.youtube.com/watch?v=ozMY60QLPP0">
+        <img src="/assets/KUSUT (PORTO).png" alt="kusut" width="600" height="400">
+      </a>
+      <div class="desc">KUSUT - SHORT MOVIE AKSHITA PRODUCTION x Rams Project</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://www.youtube.com/watch?v=q_UQsoU10k8">
+        <img src="/assets/PAMALI (PORTO).png" alt=pamali" width="600" height="400">
+      </a>
+      <div class="desc">Pamali - Horror Movie AKSHITA PRODUCTION x Rams Project</div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</section>
+
+
+<!--MASSAGE US-->
+<section>
+    <div class="container">
+      <div class="main-judul">
+        <h1>Isi data diri dan pesan Anda!</h1>
+      </div>
+      <div class="main-pesan">
+        <div class="main-form">
+          <form name="message-form" onsubmit="kirim(); return false">
+            <table>
+              <tbody>
+                <tr>
+                  <td><label for="nama">Nama</label></td>
+                  <td>:
+                    <input type="text" name="nama" id="nama" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="ttl">Tanggal Lahir</label></td>
+                  <td>:
+                    <input type="date" name="ttl" id="ttl" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="gender">Jenis Kelamin</label></td>
+                  <td>:
+                    <input type="radio" name="gender" id="laki-laki" value="Laki-laki" required><label for="laki-laki">Laki-laki</label>
+                    <input type="radio" name="gender" id="perempuan" value="Perempuan" required><label for="perempuan">Perempuan</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="position: absolute;"><label for="pesan">Pesan</label></td>
+                  <td>
+                    <textarea name="pesan" id="pesan" cols="30" rows="5" required></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input type="submit" name="submit" value="Kirim">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
         </div>
-         <nav class="nav">nav bar</nav>
-    </header>
-    <script src="./js/script.js"></script>
+        <div class="main-data">
+          <table>
+            <tbody>
+              <tr class="td-waktu">
+                <td><label for="waktu">Waktu</label></td>
+                <td>
+                  <span id="waktu"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="nama">Nama</label></td>
+                <td>:
+                  <span id="nama2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="ttl">Tanggal Lahir</label></td>
+                <td>:
+                  <span id="ttl2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td>:
+                  <span id="gender2"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="pesan">Pesan</label></td>
+                <td>:
+                  <span id="pesan2"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</section>
+
+
 </body>
+<SCript src="/js/script.js"></SCript>
 </html>

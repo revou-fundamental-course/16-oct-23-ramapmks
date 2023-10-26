@@ -1,0 +1,211 @@
+.body {
+margin: 0px;
+background-color: #99b898; 
+font-family: Helvetica;
+}
+
+/* CSS NAVBAR */
+.header{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0cm 1.5cm;
+    background-color: #E84A5F;
+    border-bottom: 3px solid red;
+}
+.nav-item:hover {
+  background:  #b34a58;
+}
+.nav-logo img {
+  MARGIN-TOP: 7PX;
+  MARGIN-BOTTOM: 2PX;
+  margin-left: 34mm;
+  max-height: 44px;
+}
+.nav {
+  display: flex;
+  font-size: larger;
+  font-family: Helvetica;
+}
+.nav-item {
+  padding: 4px 18px;
+  border: 2.5px solid #E84A5F;
+  min-width: 69px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* CSS GREETING */
+.greeting {
+  padding-top: 2cm;
+  padding-left: 5cm;
+  color: white;
+  border-bottom: 3px solid red;
+}
+.banner {
+  background-image: url('../assets/BG\ 1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  border-bottom: 3px solid red;
+}
+
+
+/*CSS VISI MISI*/
+.visi-misi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.visi-misi-text{
+  text-align: center;
+  background-color: #ff847c;
+  width: 50%;
+  COLOR: WHITE;
+  border-bottom: 3px solid red;
+}
+
+
+/* CSS ABOUT ME*/
+.my-profile {
+  margin: 10px 0px 0px;
+  line-height: 1.8em;
+  color: white;
+  border-bottom: 3px solid red;
+}
+.my-profile-judul {
+  text-align: center;
+}
+.my-profile-isi {
+  display: flex;
+  flex-direction: column;
+}
+.my-profile-foto {
+  text-align: center;
+}
+.my-profile-foto img {
+  max-height: 5cm;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.my-profile-foto span {
+  font-size: 14px;
+}
+.my-profile-text {
+  padding: 30px 150px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+.my-profile-text p {
+  margin-bottom: 10px;
+}
+
+
+/* CSS POROTOFOLIO*/
+.portofolio {
+  background-color: #ff847c;
+}
+.portofolio-judul{
+  color: white;
+}
+div.gallery {
+  border: 0px solid #ccc;
+  border-radius: 5%;
+  background-color: white;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+  margin-top: 0px;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* CSS POROTOFOLIO*/
+main {
+  padding: 80px 0px 20px;
+}
+.main-judul {
+  margin: 10px 0 30px;
+  line-height: 1.8em;
+}
+.main-pesan {
+  display: flex;
+}
+.main-form {
+  width: 50%;
+}
+.main-form table td {
+  padding: 10px;
+}
+.main-form table input[name="submit"] {
+  width: 100%;
+  background-color: #fede3e;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+.main-form table input[name="submit"]:hover {
+  background-color: #f3d22b;
+  cursor: pointer;
+}
+.main-data table td {
+  padding: 12px;
+}
+.main-data .td-waktu {
+  border-bottom: 1px solid black;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 20px 0px 20px;
+    font-size: 12px;
+  }
+  .main-judul h1 {
+    font-size: 18px;
+  }
+  .main-form {
+    width: 100%;
+  }
+  .main-form table {
+    width: 100%;
+  }
+  .main-pesan {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-data {
+    margin: 0px auto;
+}
+}
